@@ -1,0 +1,75 @@
+
+.bannerLoader {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background-image: url('https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+    background-size: 100% 100%;
+
+    .info{
+        width: 45%;
+        padding: 0 5% 10%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-self: end;
+
+        img{
+            width: 400px;
+        }
+
+        .desc{
+            margin: 20px 0px;
+            font-size: 16px;
+        }
+
+        .buttons{
+            display: flex;
+
+            button{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                font-weight: 500;
+                margin-right: 10px;
+                cursor: pointer;
+
+                &.play{
+                    background-color: white;
+                    color: var(--main-color);
+                }
+
+                span{
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .player {
+        width: 100%;
+        padding: calc(10% + 70px) 5% 10% 0;
+        align-self: center;
+
+        .iframe-wrapper {
+            transform: rotateY(90deg);
+            transition: transform 0.8s ease;
+
+            &.visible {
+                transform: rotate(0)
+            }
+        }
+    }
+
+}

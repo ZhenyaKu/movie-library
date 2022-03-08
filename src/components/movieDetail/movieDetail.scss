@@ -1,0 +1,55 @@
+@import '../../common/colors.scss';
+
+.movieContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+    color: $font-primary;
+    font-weight: 400;
+    margin-top: 40px;
+    
+
+    .left{
+        margin-top: 30px;
+        padding: 0px 40px 0px 10px;
+
+        .movieTitle {
+            font-size: 40px;
+            color: $font-primary;
+        }
+
+        .movieRating{
+            padding-left: 3px;
+            margin-top: 20px;
+            color: $font-secondary;
+            display: flex;
+
+            span {
+                margin-right: 20px;
+            }
+        }
+
+        .moviePlot {
+            margin-top: 20px;
+            line-height: 1.8rem;
+        }
+
+        .movieInfo{
+            div span:first-child {
+                padding: 10px 0px;
+                color: $font-primary;
+                font-weight: 600;
+                width: 100px;
+                display: inline-block;
+            }
+
+            div span {
+            color: $font-secondary;
+            }
+        }
+    }
+
+    .sectionRight {
+        margin-left: 30px;
+    }
+}

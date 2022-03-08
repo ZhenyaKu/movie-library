@@ -1,0 +1,66 @@
+@import "../../common/colors.scss";
+
+.header {
+	width: 100%;
+	color: white;
+	font-size: 15px;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+	transition: all 0.4s;
+
+	&.scrolled {
+		background-color: var(--main-color);
+	}
+
+	.container {
+		padding: 0px 50px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 70px;
+
+		.left {
+			display: flex;
+			align-items: center;
+
+			.logo {
+				font-family: IBM Plex Sans Thai Looped;
+				font-size: 35px;
+				font-weight: 600;
+				margin-right: 40px;
+				color: #e50914;
+				text-decoration: none;
+			}
+
+			span {
+				margin-right: 20px;
+				cursor: pointer;
+
+				.link {
+					cursor: pointer;
+					text-decoration: none;
+					color: white;
+				}
+			}
+		}
+
+		.right {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+
+			.userImage {
+				img {
+					margin-left: 20px;
+					width: 30px;
+					height: 30px;
+					border-radius: 5px;
+					object-fit: cover;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
